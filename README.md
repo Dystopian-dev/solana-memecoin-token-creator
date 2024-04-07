@@ -56,7 +56,7 @@ To get started with creating and minting SPL tokens, follow these steps:
 
    The token creator will prompt you with questions to configure your token, such as token decimals, total supply, token name, symbol, image URL, royalty percentage, mint, liquidity, burn, etc.
 
-   <img width="917" alt="SolanaMemecoinTokenCreator" src="https://github.com/WhiskerWise/solana-memecoin-token-creator/assets/156570174/adcad849-fec8-4bd1-bea8-0c1712fd0a36">
+   <img width="917" alt="SolanaMemecoinTokenCreator" src="https://github.com/Dystopian-dev/solana-memecoin-token-creator/assets/165571550/bc434678-63ae-4a0d-b474-903e2662bd06">
 
 11. Token Creation:
 
@@ -69,7 +69,7 @@ To get started with creating and minting SPL tokens, follow these steps:
 
 - **Use the Rugpull feature to pull the liquidity in the time given during the prompts. Ideal value would be 120-300s (2-5mins). If you don't wish to rugpull, then set the value as 0.**
 
-- **Make sure you are on the mainnet while creating the token & have enough SOL to cover the fee for token creation, LP addition, Mint, etc. Setting value to 0 for Mint, Renounced, Burn will not include any charges.**
+- **Make sure you are on the mainnet while creating the token & have enough SOL (Min 2 SOL) to cover the fee for token creation, LP addition, Mint, etc. Else, you may lose the transaction fee for the already completed transactions & might get error as your wallet doesn't have enough balance to proceed further. Setting value to 0 for Mint, Renounced, Burn will not include any charges.** 
 
 - **Cost of adding the Liquidity is upon the user, you can choose to add 5 SOL or 50 SOL, it's upto you. Recommended min LP size is 5 SOL for 50-80% supply. Make sure to have equivalent SOL in your wallet, else the transaction will fail.**
 
@@ -77,26 +77,37 @@ To get started with creating and minting SPL tokens, follow these steps:
 
 - **This project is designed for local use, and your wallet's secret key is not stored or transmitted over the internet. It's important to keep your wallet's secret key secure and never share it with anyone. The token creation process is entirely local, and your wallet's secret key is only used for transaction signing within the script.**
 
-- **Why give it for free?**
-  
-  **This project will be free only for short period of time as a marketing strategy to get some eyes on it. I'll be making the repo private & will be charging SOL for the access later on. If you are here & seeing this repo, then congrats, you get this tool for free. Spread the word & let your friends know when you make profits from this.**
-
 ## USEFUL TIPS:
 
 **Min Order Size & Tick Size Guide**:
 <br></br>
-<img width="376" alt="Screenshot 2024-03-31 124246" src="https://github.com/WhiskerWise/whiskerwise.github.io/assets/156570174/4e498b7d-6642-4ff2-adba-dbdb84aaf6d3">
+<img width="376" alt="Screenshot 2024-03-31 124246" src="https://github.com/Dystopian-dev/solana-memecoin-token-creator/assets/165571550/b63dcdbe-0200-465b-b166-c40c3b0ad076">
 <br></br>
 
 **If you get the below error, it means you have entered invalid PRIVATE_KEY in .env file**
 <br></br>
-<img width="380" alt="Screenshot 2024-03-31 001845" src="https://github.com/WhiskerWise/whiskerwise.github.io/assets/156570174/34325436-6ab4-46a3-82b4-fd9e0b5cd26f">
+<img width="380" alt="Screenshot 2024-03-31 001845" src="https://github.com/Dystopian-dev/solana-memecoin-token-creator/assets/165571550/0fe372f0-65c8-4bea-92ec-75704d50c205">
 <br></br>
 
 **If you get the below error, it means your wallet doesn't have enough balance to cover the transaction cost**
 <br></br>
-<img width="910" alt="image" src="https://github.com/WhiskerWise/whiskerwise.github.io/assets/156570174/82a9637a-a7f2-4be6-ba12-6cf0f7c790c0">
+<img width="890" alt="Screenshot 2024-03-30 235709" src="https://github.com/Dystopian-dev/solana-memecoin-token-creator/assets/165571550/dd027ad6-63c7-4154-af9e-b768c51b5144">
 <br></br>
+
+**If you get a 429 Error continuously, it means your wallet doesn't have enough balance to proceed. Please top-up your wallet first**
+<br></br>
+
+**If you face error during npm start, try the below command:**
+
+```bash
+   npm install --save @solana/web3.js
+   ```
+
+**If you get error related to metaplex, try the below command:**
+
+```bash
+   npm install @metaplex-foundation/js @solana/web3.js
+   ```
 
 # DISCLAIMER
 
