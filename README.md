@@ -2,6 +2,8 @@
 
 Use this to code for **FREE**, to create **Solana Memecoin Token under 2 minutes** with **MINT DISABLE, RENOUNCE OWNERSHIP, ADD LIQUIDITY, BURN, RUGPULL** functionalities & extremely **CHEAPER** than other providers. The rugpull functionality guarantees that your invested SOL will return from the LP withdraw along with Profits. Currently being used by many Devs for creating tokens by the minute & pulling profits within seconds of launch.
 
+## Happy to announce that many clients have shown interest in upcoming V2 dapp of this cli tool. We will be launching a Dapp soon but it'll be subscription based. We will be taking down the source code soon before launch
+
 # DEMO VIDEO OF TOOL IN ACTION:
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JKis3ivf5wk/0.jpg)](https://www.youtube.com/watch?v=JKis3ivf5wk)
 <br></br>
